@@ -1,0 +1,909 @@
+2025-06-18 11:26:36.0900 Info Uygulama başlatılıyor... 
+2025-06-18 11:26:36.6119 Info Now listening on: http://localhost:5165 
+2025-06-18 11:26:36.6624 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:26:36.6624 Info Hosting environment: Development 
+2025-06-18 11:26:36.6624 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:26:37.9069 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:26:38.0264 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 125.2498ms 
+2025-06-18 11:26:38.0396 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:26:38.0396 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:26:38.0426 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 3.0168ms 
+2025-06-18 11:26:38.0596 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 20.0678ms 
+2025-06-18 11:26:38.1363 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:26:38.1363 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 8.7866ms 
+2025-06-18 11:29:56.4480 Info Uygulama başlatılıyor... 
+2025-06-18 11:29:56.9877 Info Now listening on: http://localhost:5165 
+2025-06-18 11:29:57.0412 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:29:57.0423 Info Hosting environment: Development 
+2025-06-18 11:29:57.0423 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:29:57.7184 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:29:57.8067 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 92.1700ms 
+2025-06-18 11:29:57.8579 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:29:57.8579 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:29:57.8579 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 1.8793ms 
+2025-06-18 11:29:57.8778 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 19.9825ms 
+2025-06-18 11:29:57.9770 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:29:57.9881 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.2108ms 
+2025-06-18 11:30:16.3351 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 11:30:16.3491 Info CORS policy execution successful. 
+2025-06-18 11:30:16.3491 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 16.2392ms 
+2025-06-18 11:30:16.3491 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 97 
+2025-06-18 11:30:16.3491 Info CORS policy execution successful. 
+2025-06-18 11:30:16.3551 Warn Failed to determine the https port for redirect. 
+2025-06-18 11:30:16.3551 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:30:16.3758 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:30:17.1912 Info Executed DbCommand (38ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 11:30:17.2214 Info Ali Can eklendi. 
+2025-06-18 11:30:17.2303 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:30:17.2303 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 858.8712ms 
+2025-06-18 11:30:17.2303 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:30:17.2458 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 893.2444ms 
+2025-06-18 11:30:18.2492 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:30:18.2492 Info CORS policy execution successful. 
+2025-06-18 11:30:18.2492 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:30:18.2492 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:30:18.5046 Info Executed DbCommand (1ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:30:18.5046 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:30:18.5107 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 253.2701ms 
+2025-06-18 11:30:18.5107 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:30:18.5107 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 262.7370ms 
+2025-06-18 11:32:51.9518 Info Uygulama başlatılıyor... 
+2025-06-18 11:32:52.4475 Info Now listening on: http://localhost:5165 
+2025-06-18 11:32:52.4937 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:32:52.4937 Info Hosting environment: Development 
+2025-06-18 11:32:52.4937 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:32:53.8458 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:32:53.9508 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 108.8278ms 
+2025-06-18 11:32:53.9654 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:32:53.9654 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:32:53.9654 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 2.4366ms 
+2025-06-18 11:32:53.9878 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 22.4490ms 
+2025-06-18 11:32:54.0642 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:32:54.0642 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 8.7685ms 
+2025-06-18 11:33:01.7045 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/6 - - - 
+2025-06-18 11:33:01.7166 Info CORS policy execution successful. 
+2025-06-18 11:33:01.7166 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/6 - 204 - - 14.2635ms 
+2025-06-18 11:33:01.7166 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/6 - - - 
+2025-06-18 11:33:01.7166 Info CORS policy execution successful. 
+2025-06-18 11:33:01.7314 Warn Failed to determine the https port for redirect. 
+2025-06-18 11:33:01.7314 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:33:01.7490 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:33:02.3239 Info Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 11:33:02.4134 Info Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 11:33:02.4225 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:33:02.4225 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 676.7587ms 
+2025-06-18 11:33:02.4225 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:33:02.4330 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/6 - 200 - application/json;+charset=utf-8 713.0523ms 
+2025-06-18 11:33:03.4215 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:33:03.4215 Info CORS policy execution successful. 
+2025-06-18 11:33:03.4215 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:33:03.4215 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:33:03.4516 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:33:03.4516 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:33:03.4516 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 26.0048ms 
+2025-06-18 11:33:03.4516 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:33:03.4516 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 34.6715ms 
+2025-06-18 11:33:18.0671 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 11:33:18.0671 Info CORS policy execution successful. 
+2025-06-18 11:33:18.0671 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 3.7233ms 
+2025-06-18 11:33:18.0671 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 97 
+2025-06-18 11:33:18.0671 Info CORS policy execution successful. 
+2025-06-18 11:33:18.0732 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:33:18.0732 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:33:18.1409 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 11:33:18.1409 Info ali can eklendi. 
+2025-06-18 11:33:18.1409 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:33:18.1409 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 74.2859ms 
+2025-06-18 11:33:18.1409 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:33:18.1409 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 78.4480ms 
+2025-06-18 11:33:19.4165 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:33:19.4177 Info CORS policy execution successful. 
+2025-06-18 11:33:19.4177 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:33:19.4177 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:33:19.4177 Info Executed DbCommand (2ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:33:19.4177 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:33:19.4177 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 7.5234ms 
+2025-06-18 11:33:19.4177 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:33:19.4177 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 12.5060ms 
+2025-06-18 11:36:39.8354 Info Uygulama başlatılıyor... 
+2025-06-18 11:36:40.3511 Info Now listening on: http://localhost:5165 
+2025-06-18 11:36:40.4038 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:36:40.4038 Info Hosting environment: Development 
+2025-06-18 11:36:40.4038 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:36:41.0021 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:36:41.1210 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 123.1263ms 
+2025-06-18 11:36:41.1455 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:36:41.1455 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:36:41.1455 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 3.2034ms 
+2025-06-18 11:36:41.1698 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 24.4165ms 
+2025-06-18 11:36:41.2342 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:36:41.2342 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 8.9515ms 
+2025-06-18 11:36:52.4265 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:36:52.4349 Info CORS policy execution successful. 
+2025-06-18 11:36:52.4349 Warn Failed to determine the https port for redirect. 
+2025-06-18 11:36:52.4349 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:36:52.4613 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:36:53.3239 Info Executed DbCommand (25ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:36:53.3435 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:36:53.3552 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 889.589ms 
+2025-06-18 11:36:53.3552 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:36:53.3552 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 935.3506ms 
+2025-06-18 11:37:01.6021 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 11:37:01.6045 Info CORS policy execution successful. 
+2025-06-18 11:37:01.6045 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 3.9689ms 
+2025-06-18 11:37:01.6045 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 11:37:01.6045 Info CORS policy execution successful. 
+2025-06-18 11:37:01.6045 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:37:01.6045 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:37:01.7655 Info Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 11:37:01.7816 Info Yeni kullanıcı eklendi. 
+2025-06-18 11:37:01.7816 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:37:01.7816 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 173.7629ms 
+2025-06-18 11:37:01.7816 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:37:01.7816 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 179.7712ms 
+2025-06-18 11:37:02.7085 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:37:02.7085 Info CORS policy execution successful. 
+2025-06-18 11:37:02.7085 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:37:02.7085 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:37:02.7673 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:37:02.7673 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:37:02.7673 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 54.9208ms 
+2025-06-18 11:37:02.7673 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:37:02.7673 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 61.6430ms 
+2025-06-18 11:37:51.1980 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:37:51.2027 Info CORS policy execution successful. 
+2025-06-18 11:37:51.2027 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:37:51.2027 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:37:51.2027 Info Executed DbCommand (1ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:37:51.2027 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:37:51.2027 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 5.3243ms 
+2025-06-18 11:37:51.2027 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:37:51.2027 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 14.9138ms 
+2025-06-18 11:39:40.5677 Info Uygulama başlatılıyor... 
+2025-06-18 11:39:41.0565 Info Now listening on: http://localhost:5165 
+2025-06-18 11:39:41.1545 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:39:41.1545 Info Hosting environment: Development 
+2025-06-18 11:39:41.1545 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:39:41.5850 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:39:41.6847 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 104.7440ms 
+2025-06-18 11:39:41.6847 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:39:41.6847 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 3.1904ms 
+2025-06-18 11:39:41.6847 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:39:41.7186 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 22.1245ms 
+2025-06-18 11:39:41.7982 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:39:41.8082 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.0729ms 
+2025-06-18 11:39:45.7845 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/8 - - - 
+2025-06-18 11:39:45.7983 Info CORS policy execution successful. 
+2025-06-18 11:39:45.7983 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/8 - 204 - - 17.2080ms 
+2025-06-18 11:39:45.7983 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/8 - - - 
+2025-06-18 11:39:45.7983 Info CORS policy execution successful. 
+2025-06-18 11:39:45.7983 Warn Failed to determine the https port for redirect. 
+2025-06-18 11:39:45.8090 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:39:45.8252 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:39:46.3877 Info Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 11:39:46.4596 Info Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 11:39:46.4670 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:39:46.4670 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 645.5873ms 
+2025-06-18 11:39:46.4670 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:39:46.4670 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/8 - 200 - application/json;+charset=utf-8 675.1857ms 
+2025-06-18 11:39:47.3231 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:39:47.3231 Info CORS policy execution successful. 
+2025-06-18 11:39:47.3231 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:39:47.3231 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:39:47.3651 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:39:47.3651 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:39:47.3651 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 38.4547ms 
+2025-06-18 11:39:47.3705 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:39:47.3705 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 48.2830ms 
+2025-06-18 11:39:53.3186 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 11:39:53.3186 Info CORS policy execution successful. 
+2025-06-18 11:39:53.3186 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 2.0612ms 
+2025-06-18 11:39:53.3186 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 11:39:53.3186 Info CORS policy execution successful. 
+2025-06-18 11:39:53.3232 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:39:53.3232 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:39:53.4184 Info Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 11:39:53.4184 Info Yeni kullanıcı eklendi. 
+2025-06-18 11:39:53.4184 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:39:53.4184 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 106.66ms 
+2025-06-18 11:39:53.4184 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:39:53.4334 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 111.4853ms 
+2025-06-18 11:39:54.3342 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:39:54.3342 Info CORS policy execution successful. 
+2025-06-18 11:39:54.3342 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:39:54.3342 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:39:54.3416 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:39:54.3416 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:39:54.3416 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 6.0819ms 
+2025-06-18 11:39:54.3416 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:39:54.3416 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 10.1674ms 
+2025-06-18 11:58:24.3557 Info NLog test logu – uygulama başladı 
+2025-06-18 11:58:24.3719 Info Uygulama başlatılıyor... 
+2025-06-18 11:58:24.8664 Info Now listening on: http://localhost:5165 
+2025-06-18 11:58:24.9836 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 11:58:24.9836 Info Hosting environment: Development 
+2025-06-18 11:58:24.9836 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 11:58:26.2632 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 11:58:26.3795 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 121.6528ms 
+2025-06-18 11:58:26.3897 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 11:58:26.3897 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 11:58:26.3897 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 2.0879ms 
+2025-06-18 11:58:26.4086 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 18.9211ms 
+2025-06-18 11:58:26.4799 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 11:58:26.4799 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.2313ms 
+2025-06-18 11:58:30.0676 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/15 - - - 
+2025-06-18 11:58:30.0742 Info CORS policy execution successful. 
+2025-06-18 11:58:30.0742 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/15 - 204 - - 8.5942ms 
+2025-06-18 11:58:30.0742 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/15 - - - 
+2025-06-18 11:58:30.0742 Info CORS policy execution successful. 
+2025-06-18 11:58:30.0742 Warn Failed to determine the https port for redirect. 
+2025-06-18 11:58:30.0742 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:58:30.0890 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:58:30.7375 Info Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 11:58:30.8173 Info Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 11:58:30.8268 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:58:30.8268 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 729.4538ms 
+2025-06-18 11:58:30.8268 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 11:58:30.8268 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/15 - 200 - application/json;+charset=utf-8 759.9050ms 
+2025-06-18 11:58:31.7197 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:58:31.7197 Info CORS policy execution successful. 
+2025-06-18 11:58:31.7197 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:58:31.7197 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:58:31.7581 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:58:31.7581 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:58:31.7581 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 32.5789ms 
+2025-06-18 11:58:31.7608 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:58:31.7608 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 41.5621ms 
+2025-06-18 11:58:36.4509 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 11:58:36.4509 Info CORS policy execution successful. 
+2025-06-18 11:58:36.4509 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 1.4089ms 
+2025-06-18 11:58:36.4509 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 11:58:36.4509 Info CORS policy execution successful. 
+2025-06-18 11:58:36.4509 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:58:36.4509 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:58:36.5268 Info Executed DbCommand (5ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO Logs (KullaniciId, Islem, Tarih, Detay) VALUES (1, 'Manuel Log', GETDATE(), 'Doğrudan SQL ile log') 
+2025-06-18 11:58:36.5494 Info TEST: Veritabanı logu 
+2025-06-18 11:58:36.5627 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 11:58:36.5627 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 11:58:36.5743 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 117.1716ms 
+2025-06-18 11:58:36.5743 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 11:58:36.5743 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 121.4491ms 
+2025-06-18 11:58:37.6035 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 11:58:37.6035 Info CORS policy execution successful. 
+2025-06-18 11:58:37.6035 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:58:37.6035 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 11:58:37.6105 Info Executed DbCommand (1ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 11:58:37.6105 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 11:58:37.6105 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 6.7194ms 
+2025-06-18 11:58:37.6105 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 11:58:37.6105 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 8.6339ms 
+2025-06-18 12:01:12.1050 Info NLog test logu – uygulama başladı 
+2025-06-18 12:01:12.1050 Info Uygulama başlatılıyor... 
+2025-06-18 12:01:12.9956 Info Now listening on: http://localhost:5165 
+2025-06-18 12:01:13.0622 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:01:13.0622 Info Hosting environment: Development 
+2025-06-18 12:01:13.0622 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:01:13.2733 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:01:13.3820 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 113.0250ms 
+2025-06-18 12:01:13.4232 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:01:13.4232 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:01:13.4232 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 1.5818ms 
+2025-06-18 12:01:13.4487 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 25.5580ms 
+2025-06-18 12:01:13.5186 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:01:13.5266 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 8.0033ms 
+2025-06-18 12:01:19.8629 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Kullanicilar/giris - - - 
+2025-06-18 12:01:19.8629 Info CORS policy execution successful. 
+2025-06-18 12:01:19.8712 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Kullanicilar/giris - 204 - - 8.3615ms 
+2025-06-18 12:01:19.8712 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Kullanicilar/giris - application/json 41 
+2025-06-18 12:01:19.8712 Info CORS policy execution successful. 
+2025-06-18 12:01:19.8712 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:01:19.8712 Info Executing endpoint 'TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi)' 
+2025-06-18 12:01:19.8945 Info Route matched with {action = "GirisYap", controller = "Kullanicilar"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(TelefonRehberi.Controllers.KullaniciGirisModel) on controller TelefonRehberi.Controllers.KullanicilarController (TelefonRehberi). 
+2025-06-18 12:01:21.5354 Info Executed DbCommand (63ms) [Parameters=[@__model_KullaniciAdi_0='?' (Size = 50), @__model_Sifre_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[KullaniciAdi], [u].[Sifre]
+FROM [Users] AS [u]
+WHERE [u].[KullaniciAdi] = @__model_KullaniciAdi_0 AND [u].[Sifre] = @__model_Sifre_1 
+2025-06-18 12:01:21.5912 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:01:21.6074 Info Executed action TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi) in 1702.4747ms 
+2025-06-18 12:01:21.6074 Info Executed endpoint 'TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi)' 
+2025-06-18 12:01:21.6074 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Kullanicilar/giris - 200 - application/json;+charset=utf-8 1741.6082ms 
+2025-06-18 12:01:23.3140 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:01:23.3140 Info CORS policy execution successful. 
+2025-06-18 12:01:23.3140 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:23.3140 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:01:23.3727 Info Executed DbCommand (2ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:01:23.3727 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:01:23.3727 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 55.4248ms 
+2025-06-18 12:01:23.3727 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:23.3727 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 66.2727ms 
+2025-06-18 12:01:26.0338 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/16 - - - 
+2025-06-18 12:01:26.0338 Info CORS policy execution successful. 
+2025-06-18 12:01:26.0338 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/16 - 204 - - 2.1871ms 
+2025-06-18 12:01:26.0338 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/16 - - - 
+2025-06-18 12:01:26.0338 Info CORS policy execution successful. 
+2025-06-18 12:01:26.0338 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:01:26.0338 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:01:26.0943 Info Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:01:26.1768 Info Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 12:01:26.1831 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:01:26.1831 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 144.6235ms 
+2025-06-18 12:01:26.1831 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:01:26.1831 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/16 - 200 - application/json;+charset=utf-8 147.8414ms 
+2025-06-18 12:01:27.1475 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:01:27.1475 Info CORS policy execution successful. 
+2025-06-18 12:01:27.1475 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:27.1475 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:01:27.1561 Info Executed DbCommand (1ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:01:27.1561 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:01:27.1561 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 7.7619ms 
+2025-06-18 12:01:27.1561 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:27.1561 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 10.3394ms 
+2025-06-18 12:01:33.4419 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 12:01:33.4419 Info CORS policy execution successful. 
+2025-06-18 12:01:33.4419 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 0.9778ms 
+2025-06-18 12:01:33.4419 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 12:01:33.4419 Info CORS policy execution successful. 
+2025-06-18 12:01:33.4419 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:01:33.4419 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:01:33.4696 Info Executed DbCommand (10ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO Logs (KullaniciId, Islem, Tarih, Detay) VALUES (1, 'Manuel Log', GETDATE(), 'Doğrudan SQL ile log') 
+2025-06-18 12:01:33.4831 Info TEST: Veritabanı logu 
+2025-06-18 12:01:33.4831 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 12:01:33.5048 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:01:33.5048 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 59.4364ms 
+2025-06-18 12:01:33.5048 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:01:33.5048 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 62.8425ms 
+2025-06-18 12:01:34.5839 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:01:34.5839 Info CORS policy execution successful. 
+2025-06-18 12:01:34.5839 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:34.5839 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:01:34.5839 Info Executed DbCommand (2ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:01:34.5839 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:01:34.5895 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 4.2262ms 
+2025-06-18 12:01:34.5895 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:01:34.5895 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 6.3902ms 
+2025-06-18 12:03:58.4180 Info NLog test logu – uygulama başladı 
+2025-06-18 12:03:58.4180 Info Uygulama başlatılıyor... 
+2025-06-18 12:03:58.8736 Info Now listening on: http://localhost:5165 
+2025-06-18 12:03:58.9227 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:03:58.9227 Info Hosting environment: Development 
+2025-06-18 12:03:58.9227 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:03:59.9725 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:04:00.0766 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 108.2168ms 
+2025-06-18 12:04:00.0923 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:04:00.0923 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:04:00.0923 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 2.8432ms 
+2025-06-18 12:04:00.1152 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 23.3491ms 
+2025-06-18 12:04:00.1809 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:04:00.1902 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.2715ms 
+2025-06-18 12:04:03.9831 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/17 - - - 
+2025-06-18 12:04:03.9831 Info CORS policy execution successful. 
+2025-06-18 12:04:03.9831 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/17 - 204 - - 8.4702ms 
+2025-06-18 12:04:03.9831 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/17 - - - 
+2025-06-18 12:04:03.9831 Info CORS policy execution successful. 
+2025-06-18 12:04:03.9831 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:04:03.9955 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:04:04.0127 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:04:04.6719 Info Executed DbCommand (17ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:04:04.7556 Info Executed DbCommand (14ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 12:04:04.7635 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:04:04.7635 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 754.5959ms 
+2025-06-18 12:04:04.7635 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:04:04.7635 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/17 - 200 - application/json;+charset=utf-8 781.5942ms 
+2025-06-18 12:04:06.0397 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:04:06.0428 Info CORS policy execution successful. 
+2025-06-18 12:04:06.0428 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:04:06.0428 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:04:06.0793 Info Executed DbCommand (1ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:04:06.0793 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:04:06.0793 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 36.7649ms 
+2025-06-18 12:04:06.0793 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:04:06.0793 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 44.7898ms 
+2025-06-18 12:04:11.5370 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 12:04:11.5370 Info CORS policy execution successful. 
+2025-06-18 12:04:11.5370 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 1.3148ms 
+2025-06-18 12:04:11.5370 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 12:04:11.5370 Info CORS policy execution successful. 
+2025-06-18 12:04:11.5370 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:04:11.5425 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:04:11.6212 Info Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO Logs (KullaniciId, Islem, Tarih, Detay) VALUES (1, 'Manuel Log', GETDATE(), 'Doğrudan SQL ile log') 
+2025-06-18 12:04:11.6212 Info TEST: Veritabanı logu 
+2025-06-18 12:04:11.6466 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 12:04:11.6568 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:04:11.6568 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 114.2593ms 
+2025-06-18 12:04:11.6568 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:04:11.6568 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 118.6640ms 
+2025-06-18 12:04:12.5883 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:04:12.5883 Info CORS policy execution successful. 
+2025-06-18 12:04:12.5893 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:04:12.5893 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:04:12.5893 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:04:12.5893 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:04:12.5893 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 5.3275ms 
+2025-06-18 12:04:12.5893 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:04:12.5893 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 7.8160ms 
+2025-06-18 12:06:13.7612 Info NLog test logu – uygulama başladı 
+2025-06-18 12:06:13.9200 Info Uygulama başlatılıyor... 
+2025-06-18 12:06:14.3781 Info Now listening on: http://localhost:5165 
+2025-06-18 12:06:14.4298 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:06:14.4298 Info Hosting environment: Development 
+2025-06-18 12:06:14.4298 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:06:14.5766 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:06:14.6843 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 112.2406ms 
+2025-06-18 12:06:14.6843 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:06:14.6843 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 3.2330ms 
+2025-06-18 12:06:14.6843 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:06:14.7287 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 33.7784ms 
+2025-06-18 12:06:14.8104 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:06:14.8104 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 10.7444ms 
+2025-06-18 12:06:18.1212 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/18 - - - 
+2025-06-18 12:06:18.1212 Info CORS policy execution successful. 
+2025-06-18 12:06:18.1367 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/18 - 204 - - 15.6070ms 
+2025-06-18 12:06:18.1367 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/18 - - - 
+2025-06-18 12:06:18.1367 Info CORS policy execution successful. 
+2025-06-18 12:06:18.1367 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:06:18.1367 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:06:18.1512 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:06:18.8015 Info Executed DbCommand (16ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:06:18.8841 Info Executed DbCommand (13ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 12:06:18.8897 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:06:18.9022 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 738.0147ms 
+2025-06-18 12:06:18.9022 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:06:18.9022 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/18 - 200 - application/json;+charset=utf-8 770.1910ms 
+2025-06-18 12:06:19.7924 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:06:19.7924 Info CORS policy execution successful. 
+2025-06-18 12:06:19.7924 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:06:19.8094 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:06:19.8367 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:06:19.8367 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:06:19.8411 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 28.3218ms 
+2025-06-18 12:06:19.8411 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:06:19.8411 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 51.1381ms 
+2025-06-18 12:06:24.6685 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - - - 
+2025-06-18 12:06:24.6685 Info CORS policy execution successful. 
+2025-06-18 12:06:24.6685 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/ekle - 204 - - 4.8757ms 
+2025-06-18 12:06:24.6685 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - application/json 109 
+2025-06-18 12:06:24.6685 Info CORS policy execution successful. 
+2025-06-18 12:06:24.6685 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:06:24.6685 Info Route matched with {action = "KisiEkle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiEkle(TelefonRehberi.Models.DTO.KisiEkleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:06:24.7610 Info Executed DbCommand (4ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+INSERT INTO Logs (KullaniciId, Islem, Tarih, Detay) VALUES (1, 'Manuel Log', GETDATE(), 'Doğrudan SQL ile log') 
+2025-06-18 12:06:24.7772 Info TEST: Veritabanı logu 
+2025-06-18 12:06:24.7921 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (Size = 50), @p1='?' (Size = 100), @p2='?' (DbType = Int32), @p3='?' (Size = 50), @p4='?' (Size = 20)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Kisiler] ([Ad], [Email], [KullaniciId], [Soyad], [Telefon])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-06-18 12:06:24.7921 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:06:24.7921 Info Executed action TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi) in 122.6793ms 
+2025-06-18 12:06:24.7921 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiEkle (TelefonRehberi)' 
+2025-06-18 12:06:24.8082 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Rehber/ekle - 200 - application/json;+charset=utf-8 133.6076ms 
+2025-06-18 12:06:25.5850 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:06:25.5850 Info CORS policy execution successful. 
+2025-06-18 12:06:25.5894 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:06:25.5894 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:06:25.6047 Info Executed DbCommand (8ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:06:25.6047 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:06:25.6047 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 18.4232ms 
+2025-06-18 12:06:25.6047 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:06:25.6047 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 30.2047ms 
+2025-06-18 12:09:30.9988 Info NLog test logu – uygulama başladı 
+2025-06-18 12:09:31.1267 Info Uygulama başlatılıyor... 
+2025-06-18 12:09:31.1368 Info Test logu db'ye gidiyor mu? 
+2025-06-18 12:09:31.6216 Info Now listening on: http://localhost:5165 
+2025-06-18 12:09:31.6809 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:09:31.6834 Info Hosting environment: Development 
+2025-06-18 12:09:31.6834 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:09:32.0425 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:09:32.1558 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 116.1139ms 
+2025-06-18 12:09:32.1701 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:09:32.1701 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:09:32.1701 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 9.1224ms 
+2025-06-18 12:09:32.2107 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 34.7172ms 
+2025-06-18 12:09:32.2849 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:09:32.2966 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 11.7465ms 
+2025-06-18 12:13:33.6064 Info NLog test logu – uygulama başladı 
+2025-06-18 12:13:33.7150 Info Uygulama başlatılıyor... 
+2025-06-18 12:13:34.1798 Info Now listening on: http://localhost:5165 
+2025-06-18 12:13:34.2951 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:13:34.2951 Info Hosting environment: Development 
+2025-06-18 12:13:34.2951 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:13:35.6408 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:13:35.7740 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 139.8850ms 
+2025-06-18 12:13:35.7925 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:13:35.7925 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:13:35.7925 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 6.1717ms 
+2025-06-18 12:13:35.8296 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 37.2400ms 
+2025-06-18 12:13:35.9108 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:13:35.9248 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 13.9454ms 
+2025-06-18 12:13:43.0176 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Kullanicilar/giris - - - 
+2025-06-18 12:13:43.0292 Info CORS policy execution successful. 
+2025-06-18 12:13:43.0292 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Kullanicilar/giris - 204 - - 16.0989ms 
+2025-06-18 12:13:43.0292 Info Request starting HTTP/1.1 POST http://localhost:5165/api/Kullanicilar/giris - application/json 41 
+2025-06-18 12:13:43.0421 Info CORS policy execution successful. 
+2025-06-18 12:13:43.0421 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:13:43.0421 Info Executing endpoint 'TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi)' 
+2025-06-18 12:13:43.0763 Info Route matched with {action = "GirisYap", controller = "Kullanicilar"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GirisYap(TelefonRehberi.Controllers.KullaniciGirisModel) on controller TelefonRehberi.Controllers.KullanicilarController (TelefonRehberi). 
+2025-06-18 12:13:44.2547 Info Executed DbCommand (28ms) [Parameters=[@__model_KullaniciAdi_0='?' (Size = 50), @__model_Sifre_1='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[KullaniciAdi], [u].[Sifre]
+FROM [Users] AS [u]
+WHERE [u].[KullaniciAdi] = @__model_KullaniciAdi_0 AND [u].[Sifre] = @__model_Sifre_1 
+2025-06-18 12:13:44.3143 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType0`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:13:44.3244 Info Executed action TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi) in 1251.9728ms 
+2025-06-18 12:13:44.3244 Info Executed endpoint 'TelefonRehberi.Controllers.KullanicilarController.GirisYap (TelefonRehberi)' 
+2025-06-18 12:13:44.3399 Info Request finished HTTP/1.1 POST http://localhost:5165/api/Kullanicilar/giris - 200 - application/json;+charset=utf-8 1310.8267ms 
+2025-06-18 12:13:46.0233 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:13:46.0280 Info CORS policy execution successful. 
+2025-06-18 12:13:46.0280 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:13:46.0280 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:13:46.0877 Info Executed DbCommand (2ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:13:46.0900 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:13:46.0900 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 54.4587ms 
+2025-06-18 12:13:46.0900 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:13:46.1046 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 82.1351ms 
+2025-06-18 12:13:48.8841 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/19 - - - 
+2025-06-18 12:13:48.8927 Info CORS policy execution successful. 
+2025-06-18 12:13:48.9204 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/sil/19 - 204 - - 36.9684ms 
+2025-06-18 12:13:48.9204 Info Request starting HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/19 - - - 
+2025-06-18 12:13:48.9204 Info CORS policy execution successful. 
+2025-06-18 12:13:48.9204 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:13:48.9204 Info Route matched with {action = "KisiSil", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiSil(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:13:48.9881 Info Executed DbCommand (0ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:13:49.0588 Info Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+DELETE FROM [Kisiler]
+OUTPUT 1
+WHERE [Id] = @p0; 
+2025-06-18 12:13:49.0588 Info Kişi silindi: Emirhan Can 
+2025-06-18 12:13:49.0588 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:13:49.0734 Info Executed action TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi) in 142.6676ms 
+2025-06-18 12:13:49.0734 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiSil (TelefonRehberi)' 
+2025-06-18 12:13:49.0734 Info Request finished HTTP/1.1 DELETE http://localhost:5165/api/Rehber/sil/19 - 200 - application/json;+charset=utf-8 155.4763ms 
+2025-06-18 12:13:50.1551 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:13:50.1551 Info CORS policy execution successful. 
+2025-06-18 12:13:50.1551 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:13:50.1714 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:13:50.1714 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:13:50.1826 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:13:50.1826 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 8.3216ms 
+2025-06-18 12:13:50.1826 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:13:50.1826 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 34.8339ms 
+2025-06-18 12:14:40.6608 Info Now listening on: http://localhost:5165 
+2025-06-18 12:14:40.8268 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:14:40.8268 Info Hosting environment: Development 
+2025-06-18 12:14:40.8268 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:14:41.4081 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:14:41.5155 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 111.7042ms 
+2025-06-18 12:14:41.5155 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:14:41.5269 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:14:41.5269 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 4.9294ms 
+2025-06-18 12:14:41.5533 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 26.5050ms 
+2025-06-18 12:14:41.6241 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:14:41.6241 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 9.7817ms 
+2025-06-18 12:15:37.6455 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - - - 
+2025-06-18 12:15:37.6705 Info CORS policy execution successful. 
+2025-06-18 12:15:37.6854 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - 204 - - 39.8737ms 
+2025-06-18 12:15:37.6854 Info Request starting HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - application/json 104 
+2025-06-18 12:15:37.6854 Info CORS policy execution successful. 
+2025-06-18 12:15:37.6854 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:15:37.6854 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:15:37.7154 Info Route matched with {action = "KisiGuncelle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiGuncelle(Int32, TelefonRehberi.Models.DTO.KisiGuncelleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:15:38.7760 Info Executed DbCommand (25ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:15:38.8850 Info Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Kisiler] SET [Email] = @p0
+OUTPUT 1
+WHERE [Id] = @p1; 
+2025-06-18 12:15:38.8884 Info Kişi güncellendi: ali can 
+2025-06-18 12:15:38.9019 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:15:38.9180 Info Executed action TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi) in 1188.6238ms 
+2025-06-18 12:15:38.9180 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:15:38.9180 Info Request finished HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - 200 - application/json;+charset=utf-8 1240.5950ms 
+2025-06-18 12:15:39.9808 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:15:39.9808 Info CORS policy execution successful. 
+2025-06-18 12:15:39.9808 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:15:39.9955 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:15:40.0337 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:15:40.0337 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:15:40.0337 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 41.4161ms 
+2025-06-18 12:15:40.0421 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:15:40.0421 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 63.2001ms 
+2025-06-18 12:17:35.6664 Info Now listening on: http://localhost:5165 
+2025-06-18 12:17:35.8460 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:17:35.8460 Info Hosting environment: Development 
+2025-06-18 12:17:35.8460 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:17:36.3728 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:17:36.4915 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 123.4448ms 
+2025-06-18 12:17:36.4977 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:17:36.4977 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 4.2896ms 
+2025-06-18 12:17:36.4977 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:17:36.5279 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 23.4866ms 
+2025-06-18 12:17:36.6044 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:17:36.6050 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 14.1964ms 
+2025-06-18 12:17:43.7374 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - - - 
+2025-06-18 12:17:43.7613 Info CORS policy execution successful. 
+2025-06-18 12:17:43.7613 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - 204 - - 27.5629ms 
+2025-06-18 12:17:43.7613 Info Request starting HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - application/json 104 
+2025-06-18 12:17:43.7613 Info CORS policy execution successful. 
+2025-06-18 12:17:43.7613 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:17:43.7766 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:17:43.7942 Info Route matched with {action = "KisiGuncelle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiGuncelle(Int32, TelefonRehberi.Models.DTO.KisiGuncelleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:17:44.9077 Info Executed DbCommand (28ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:17:45.0176 Info Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Kisiler] SET [Email] = @p0
+OUTPUT 1
+WHERE [Id] = @p1; 
+2025-06-18 12:17:45.0176 Info Kişi güncellendi - ID: 7 | Değişiklikler: Email: 'ameec.1234@gmail.net' → 'ameec.1234@gmail.com'  
+2025-06-18 12:17:45.0418 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:17:45.0418 Info Executed action TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi) in 1246.1909ms 
+2025-06-18 12:17:45.0418 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:17:45.0626 Info Request finished HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - 200 - application/json;+charset=utf-8 1295.5166ms 
+2025-06-18 12:17:45.6233 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:17:45.6233 Info CORS policy execution successful. 
+2025-06-18 12:17:45.6233 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:17:45.6357 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:17:45.6793 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:17:45.6793 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:17:45.6826 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 39.6696ms 
+2025-06-18 12:17:45.6826 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:17:45.6826 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 66.5270ms 
+2025-06-18 12:20:00.7665 Info Now listening on: http://localhost:5165 
+2025-06-18 12:20:00.9608 Info Application started. Press Ctrl+C to shut down. 
+2025-06-18 12:20:00.9643 Info Hosting environment: Development 
+2025-06-18 12:20:00.9643 Info Content root path: D:\Staj\1.Proje\TelefonRehberi 
+2025-06-18 12:20:01.5777 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/index.html - - - 
+2025-06-18 12:20:01.6994 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/index.html - 200 - text/html;charset=utf-8 126.8313ms 
+2025-06-18 12:20:01.7360 Info Request starting HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - - - 
+2025-06-18 12:20:01.7360 Info Request starting HTTP/1.1 GET http://localhost:5165/_vs/browserLink - - - 
+2025-06-18 12:20:01.7360 Info Request finished HTTP/1.1 GET http://localhost:5165/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript;+charset=utf-8 3.2946ms 
+2025-06-18 12:20:01.7641 Info Request finished HTTP/1.1 GET http://localhost:5165/_vs/browserLink - 200 - text/javascript;+charset=UTF-8 28.1588ms 
+2025-06-18 12:20:01.8399 Info Request starting HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - - - 
+2025-06-18 12:20:01.8556 Info Request finished HTTP/1.1 GET http://localhost:5165/swagger/v1/swagger.json - 200 - application/json;charset=utf-8 15.6882ms 
+2025-06-18 12:20:11.5456 Info Request starting HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - - - 
+2025-06-18 12:20:11.5766 Info CORS policy execution successful. 
+2025-06-18 12:20:11.6014 Info Request finished HTTP/1.1 OPTIONS http://localhost:5165/api/Rehber/guncelle/7 - 204 - - 57.9337ms 
+2025-06-18 12:20:11.6051 Info Request starting HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - application/json 104 
+2025-06-18 12:20:11.6051 Info CORS policy execution successful. 
+2025-06-18 12:20:11.6051 Warn Failed to determine the https port for redirect. 
+2025-06-18 12:20:11.6051 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:20:11.6359 Info Route matched with {action = "KisiGuncelle", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult KisiGuncelle(Int32, TelefonRehberi.Models.DTO.KisiGuncelleDTO) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:20:12.6936 Info Executed DbCommand (25ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT TOP(1) [k].[Id], [k].[Ad], [k].[Email], [k].[KullaniciId], [k].[Soyad], [k].[Telefon]
+FROM [Kisiler] AS [k]
+WHERE [k].[Id] = @__id_0 
+2025-06-18 12:20:12.8029 Info Executed DbCommand (2ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (Size = 100)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+UPDATE [Kisiler] SET [Email] = @p0
+OUTPUT 1
+WHERE [Id] = @p1; 
+2025-06-18 12:20:12.8099 Info Kişi güncellendi - ali can | Değişiklikler: Email: 'ameec.1234@gmail.com' → 'ameec.1234@gmail.net'  
+2025-06-18 12:20:12.8099 Info Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'. 
+2025-06-18 12:20:12.8326 Info Executed action TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi) in 1185.9118ms 
+2025-06-18 12:20:12.8326 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.KisiGuncelle (TelefonRehberi)' 
+2025-06-18 12:20:12.8428 Info Request finished HTTP/1.1 PUT http://localhost:5165/api/Rehber/guncelle/7 - 200 - application/json;+charset=utf-8 1236.8547ms 
+2025-06-18 12:20:13.5390 Info Request starting HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - - - 
+2025-06-18 12:20:13.5538 Info CORS policy execution successful. 
+2025-06-18 12:20:13.5617 Info Executing endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:20:13.5617 Info Route matched with {action = "GetKisiler", controller = "Rehber"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetKisiler(Int32) on controller TelefonRehberi.Controllers.RehberController (TelefonRehberi). 
+2025-06-18 12:20:13.6066 Info Executed DbCommand (0ms) [Parameters=[@__kullaniciId_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+SELECT [k].[Id], [k].[Ad], [k].[Soyad], [k].[Telefon], [k].[Email]
+FROM [Kisiler] AS [k]
+WHERE [k].[KullaniciId] = @__kullaniciId_0 
+2025-06-18 12:20:13.6066 Info Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[<>f__AnonymousType2`5[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], TelefonRehberi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'. 
+2025-06-18 12:20:13.6066 Info Executed action TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi) in 40.443ms 
+2025-06-18 12:20:13.6066 Info Executed endpoint 'TelefonRehberi.Controllers.RehberController.GetKisiler (TelefonRehberi)' 
+2025-06-18 12:20:13.6066 Info Request finished HTTP/1.1 GET http://localhost:5165/api/Rehber/kisiler?kullaniciId=1 - 200 - application/json;+charset=utf-8 78.2294ms 
+2025-06-18 12:22:54.2639 Info Kişi silindi: ali can 
+2025-06-18 12:26:02.2784 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 12:26:04.1177 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:30:29.1578 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:35:39.7757 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:39:08.5075 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:41:11.5450 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:42:07.0218 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:43:45.6800 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:45:18.2928 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:45:22.0044 Info emirhan çıkış yaptı. 
+2025-06-18 12:45:51.2187 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 12:46:01.0766 Info Kişi eklendi: Emirhan Can 
+2025-06-18 12:46:11.6251 Info Kişi güncellendi - Eylül Can | Değişiklikler: Email: 'pasacici0@gmail.com' → 'pasacici0@gmail.net'  
+2025-06-18 12:46:16.0195 Info Kişi silindi: Ali Yılmaz 
+2025-06-18 12:46:25.1676 Info emirhan çıkış yaptı. 
+2025-06-18 12:46:49.3094 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 13:09:17.5090 Info emirhan çıkış yaptı. 
+2025-06-18 13:29:33.7232 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 13:43:35.1497 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 15:43:23.2062 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 15:55:26.6631 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 15:55:44.6136 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 15:57:04.4050 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 15:57:51.0087 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 15:58:48.5597 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 15:58:56.8889 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:00:55.2927 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:01:51.3864 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:03:06.4402 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:04:00.8525 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:05:51.3582 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:08:40.8468 Warn Başarısız giriş denemesi - Kullanıcı Adı: emirhan 
+2025-06-18 16:08:44.2505 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 16:29:00.9915 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 16:41:40.0504 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 16:58:32.5471 Info Kişi eklendi: Ali Can 
+2025-06-18 16:59:16.3663 Info Kişi güncellendi - Ayşe Demir | Değişiklikler:  
+2025-06-18 16:59:20.4811 Info Kişi silindi: Ali Can 
+2025-06-18 16:59:23.3635 Info emirhan çıkış yaptı. 
+2025-06-18 16:59:26.9906 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 17:04:19.5126 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 17:04:27.0658 Info emirhan çıkış yaptı. 
+2025-06-18 17:07:05.9834 Info Giriş yapıldı - Kullanıcı: eylül 
+2025-06-18 17:07:16.4364 Info eylül çıkış yaptı. 
+2025-06-18 17:07:21.5230 Warn Başarısız giriş denemesi - Kullanıcı Adı: ahmet 
+2025-06-18 17:07:23.0906 Info Giriş yapıldı - Kullanıcı: ahmet 
+2025-06-18 17:07:39.0014 Info Kişi eklendi: Emirhan Can 
+2025-06-18 17:17:39.7889 Info ahmet çıkış yaptı. 
+2025-06-18 17:17:51.3696 Info Giriş yapıldı - Kullanıcı: emirhan 
+2025-06-18 17:26:51.2913 Info emirhan çıkış yaptı. 

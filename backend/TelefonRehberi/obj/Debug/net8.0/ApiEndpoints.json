@@ -1,0 +1,276 @@
+[
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "ParolaDegistir",
+    "RelativePath": "api/Kullanicilar/{id}/parola-degistir",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Controllers.ParolaDegistirModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "GetUserImage",
+    "RelativePath": "api/Kullanicilar/{id}/resim",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "TelefonGuncelle",
+    "RelativePath": "api/Kullanicilar/{id}/telefon",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Controllers.TelefonGuncelleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "TemaGuncelle",
+    "RelativePath": "api/Kullanicilar/{id}/tema",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "temaDto",
+        "Type": "TelefonRehberi.Controllers.TemaGuncelleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "UploadImage",
+    "RelativePath": "api/Kullanicilar/{id}/upload-image",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "overwrite",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "CikisYap",
+    "RelativePath": "api/Kullanicilar/cikis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Controllers.KullaniciCikisModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "GirisYap",
+    "RelativePath": "api/Kullanicilar/giris",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Controllers.KullaniciGirisModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "Girishata",
+    "RelativePath": "api/Kullanicilar/GirisHata/{kullaniciId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "KayitOl",
+    "RelativePath": "api/Kullanicilar/kayit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullanici",
+        "Type": "TelefonRehberi.Models.User",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.KullanicilarController",
+    "Method": "sonaktiviteler",
+    "RelativePath": "api/Kullanicilar/sonaktiviteler/{kullaniciId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.RehberController",
+    "Method": "KisiEkle",
+    "RelativePath": "api/Rehber/ekle",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Models.DTO.KisiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.RehberController",
+    "Method": "ExportRehberToExcel",
+    "RelativePath": "api/Rehber/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.RehberController",
+    "Method": "KisiGuncelle",
+    "RelativePath": "api/Rehber/guncelle/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "TelefonRehberi.Models.DTO.KisiDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.RehberController",
+    "Method": "GetKisiler",
+    "RelativePath": "api/Rehber/kisiler",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "kullaniciId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TelefonRehberi.Controllers.RehberController",
+    "Method": "KisiSil",
+    "RelativePath": "api/Rehber/sil/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

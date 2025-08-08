@@ -1,0 +1,48 @@
+<div class="login-wrapper">
+  <div class="login-container">
+    <h2>{{ "Kayitol" | translate }}</h2>
+
+    <form (ngSubmit)="kayitOl()" #form="ngForm" >
+      <input
+        type="text"
+        [placeholder]="'Ad' | translate"
+        [(ngModel)]="ad"
+        name="ad"
+        required
+      />
+      <input
+        type="text"
+        [placeholder]="'Soyad' | translate"
+        [(ngModel)]="soyad"
+        name="soyad"
+        required
+      />
+      <input
+        type="text"
+        [placeholder]="'KullaniciAdi' | translate"
+        [(ngModel)]="kullaniciAdi"
+        name="kullaniciAdi"
+        required
+      />
+      <input
+        type="password"
+        [placeholder]="'Sifre' | translate"
+        [(ngModel)]="sifre"
+        name="sifre"
+        required
+      />
+      <button type="submit" >
+        {{ "Kayitol" | translate }}
+      </button>
+    </form>
+
+    <p class="register-link">
+      {{ "KayitMesaj" | translate }}
+      <a routerLink="/giris">{{ "GIRIS_YAP" | translate }}</a>
+    </p>
+
+    <p *ngIf="mesaj" [style.color]="mesaj.startsWith('✅') ? 'green' : 'red'">
+      {{ mesaj }}
+    </p>
+  </div>
+</div>

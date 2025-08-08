@@ -1,0 +1,36 @@
+<div class="panel-wrapper animate-fade">
+  <div class="stat-box">
+    <div class="stat-icon">👥</div>
+    <div class="stat-info">
+      <div class="stat-number">{{ toplamKisiSayisi }}</div>
+      <div class="stat-label">{{ 'ToplamKisi' | translate }}</div>
+    </div>
+  </div>
+
+  <div class="panel-flex">
+    <div class="kutu kutu-50 animate-slide-delay">
+      <h5>{{ 'SON_AKTIVITELER' | translate }}</h5>
+      <div *ngIf="sonAktiviteler.length > 0; else bosAktivite">
+        <div *ngFor="let aktivite of sonAktiviteler" class="aktivite-item">
+          <i class="bi bi-pin-angle-fill"></i>
+          {{ aktivite.islem }} - {{ aktivite.detay }} - {{ aktivite.tarih | date:'dd.MM.yyyy HH:mm' }}
+        </div>
+      </div>
+      <ng-template #bosAktivite>
+        <p>{{ 'AKTIVITE_YOK' | translate }}</p>
+      </ng-template>
+    </div>
+ <div class="kutu kutu-50 animate-slide-delay2">
+      <h5>{{ 'HATALI_GIRISLER' | translate }}</h5>
+      <div *ngIf="hataliGirisler.length > 0; else bosHata">
+        <div *ngFor="let hata of hataliGirisler" class="aktivite-item">
+          <i class="bi bi-x-circle-fill"></i>
+          {{ hata.detay }} - {{ hata.tarih | date:'dd.MM.yyyy HH:mm' }}
+        </div>
+      </div>
+      <ng-template #bosHata>
+        <p>{{ 'HATALI_GIRIS_YOK' | translate }}</p>
+      </ng-template>
+    </div>
+  </div>
+</div>

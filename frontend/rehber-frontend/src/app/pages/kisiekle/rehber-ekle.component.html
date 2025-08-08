@@ -1,0 +1,22 @@
+<div class="ekle-container">
+  <h2>➕ {{ "kisieklebaslik" | translate }}</h2>
+  <div *ngIf="mesaj" [ngClass]="{'alert-success': mesajTipi === 'success', 'alert-error': mesajTipi === 'error'}" class="alert-box">
+  {{ mesaj }}
+</div>
+
+  <form (ngSubmit)="kisiKaydet()">
+    <label>{{ "Ad" | translate }}</label>
+    <input type="text" [(ngModel)]="yeniKisi.ad" name="ad" required />
+
+    <label>{{ "Soyad" | translate }}</label>
+    <input type="text" [(ngModel)]="yeniKisi.soyad" name="soyad" required />
+
+    <label>{{ "Telefon" | translate }}</label>
+    <input type="text" mask="(000) 000-0000" prefix="0" placeholder="0(5__) ___-____" [(ngModel)]="yeniKisi.telefon" name="telefon" required />
+
+    <label>{{ "EPosta" | translate }}</label>
+    <input type="email" [(ngModel)]="yeniKisi.email" name="email" required />
+
+    <button type="submit" class="btn-blue">{{ "kaydet" | translate }}</button>
+  </form>
+</div>

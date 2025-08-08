@@ -1,0 +1,146 @@
+<div class="profil-container">
+  <div class="profil-header">
+    <img [src]="kullaniciResim" alt="Profil Resmi" class="profil-resmi" />
+
+    <h2>{{ "Ad" | translate }}:{{ kullanici.ad }}</h2>
+    <h2>{{ "Soyad" | translate }}:{{ kullanici.soyad }}</h2>
+  </div>
+
+  <div class="profil-info">
+    <p>
+      <strong>{{ "TelefonNumarasi" | translate }}:</strong>
+      {{ kullanici?.telefon ? kullanici.telefon : ("NumaraHata" | translate) }}
+    </p>
+  </div>
+
+  <div class="profil-buttons">
+    <button class="numaraekle" (click)="showNumaraModal = true">
+      {{ "NumaraEkle" | translate }}
+    </button>
+    <button class="SifreDegistir" (click)="showSifreModal = true">
+      {{ "SifreDegistir" | translate }}
+    </button>
+    <button class="resim-btn" (click)="showResimModal = true">
+      {{ "ResimYukle" | translate }}
+    </button>
+  </div>
+
+  
+  <div class="modal" *ngIf="showResimModal">
+    <div class="modal-content">
+      <h3>{{ "ResimYukle" | translate }}</h3>
+      <div
+        *ngIf="mesaj"
+        [ngClass]="{
+          'alert-success': mesajTipi === 'success',
+          'alert-error': mesajTipi === 'error'
+        }"
+        class="alert-box"
+      >
+        {{ mesaj }}
+      </div>
+      <div *ngIf="secilenDosyaAdi" class="dosya-etiketi">
+        📁 {{ secilenDosyaAdi }}
+      </div>
+      <div class="modal-actions">
+        <label for="fileInput" class="btn btn-primary custom-upload-label">
+          {{ "RESIM_SEC" | translate }}
+        </label>
+        <input
+          type="file"
+          id="fileInput"
+          (change)="onFileSelected($event)"
+          hidden
+        />
+        <button
+          class="yukle"
+          (click)="uploadImage()"
+          [disabled]="!selectedFile"
+        >
+          {{ "Yukle" | translate }}
+        </button>
+        <button (click)="showResimModal = false">
+          {{ "Vazgec" | translate }}
+        </button>
+      </div>
+      <p *ngIf="uploadMessage" [style.color]="uploadSuccess ? 'green' : 'red'">
+        {{ uploadMessage }}
+      </p>
+    </div>
+  </div>
+
+
+  <div class="modal" *ngIf="showNumaraModal">
+    <div class="modal-content">
+      <p
+        style="margin-top: 5px"
+        *ngIf="numaraMesaji"
+        [style.color]="mesajTipi === 'success' ? 'green' : 'red'"
+      >
+        {{ numaraMesaji }}
+      </p>
+
+      <h3>{{ "NumaraEkle" | translate }}</h3>
+      <input
+        type="text"
+        mask="(000) 000-0000"
+        prefix="0"
+        placeholder="0(5__) ___-____"
+        [(ngModel)]="yeniNumara"
+        name="telefon"
+        required
+      />
+      <div class="modal-actions">
+        <button class="kaydet" (click)="numaraKaydet()">
+          {{ "kaydet" | translate }}
+        </button>
+        <button (click)="showNumaraModal = false">
+          {{ "Vazgec" | translate }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal" *ngIf="showSifreModal">
+    <div class="modal-content">
+      <h3>{{ "SifreDegistir" | translate }}</h3>
+      <input
+        type="password"
+        [(ngModel)]="eskiSifre"
+        [placeholder]="'EskiSifre' | translate"
+      />
+      <input
+        type="password"
+        [(ngModel)]="yeniSifre"
+        [placeholder]="'YeniSifre' | translate"
+      />
+      <input
+        type="password"
+        [(ngModel)]="yeniSifreTekrar"
+        [placeholder]="'YeniSifreTekrar' | translate"
+      />
+      <div class="modal-actions">
+        <button
+          class="degistir"
+          (click)="parolaDegistir()"
+          [disabled]="!parolaFormGecerli()"
+        >
+          {{ "Degistir" | translate }}
+        </button>
+        <button (click)="showSifreModal = false">
+          {{ "Vazgec" | translate }}
+        </button>
+      </div>
+      <p
+        style="margin-top: 5px"
+        *ngIf="parolaMesaji"
+        [style.color]="
+          parolaMesaji.includes('ParolaBasarili') ? 'green' : 'red'
+        "
+      >
+        {{ parolaMesaji | translate }}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,444 @@
+/* ========================== */
+/* 🔥 TEMA DEĞİŞKENLERİ */
+/* ========================== */
+:root {
+  --bg-color: #f5f7fa;
+  --text-color: #222;
+  --panel-bg: white;
+  --footer-bg: #eee;
+  --leftbar-bg: #007bff;
+  --leftbar-hover: #339aff;
+  --dropdown-bg: white;
+  --dropdown-hover: #f8d7da;
+  --topbar-bg: #007bff;
+  --resim-color: #28a745;
+  --sifre-color:#ffc107;
+
+  /* ✨ Dashboard için eklenenler */
+  --card-bg: #ffffff;
+  --divider-color: #e0e0e0;
+  --btn-bg: #007bff;
+  --btn-hover: #0056b3;
+  --btn-text: white;
+}
+
+body.dark {
+  --bg-color: #1e1e1e;
+  --text-color: #eee;
+  --panel-bg: #2b2b2b;
+  --footer-bg: #1a1a1a;
+  --leftbar-bg: #111111;
+  --leftbar-hover: #333;
+  --dropdown-bg: #2c2c2c;
+  --dropdown-hover: #444;
+  --topbar-bg: #111111;
+  --resim-color: #111111;
+  --sifre-color:#111111;
+
+  /* ✨ Dashboard için eklenenler */
+  --card-bg: #2b2b2b;
+  --divider-color: #444;
+  --btn-bg: #0d6efd;
+  --btn-hover: #0a58ca;
+  --btn-text: white;
+}
+
+/* ========================== */
+/* Reset ve temel ayarlar */
+/* ========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;          /* Tam yükseklik */
+  display: flex;
+  flex-direction: column;
+  font-family: "Segoe UI", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* İçerik alanı flex ile büyüsün */
+.content1, .content {
+  flex: 1 0 auto; /* büyür ama küçülmez */
+}
+
+/* ========================== */
+/* Top bar */
+/* ========================== */
+.top-bar {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--topbar-bg);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.bar-content {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  gap: 10px;
+}
+
+.brand {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Giriş / Kayıt butonları */
+.login-btn {
+  display: inline-block;
+  background-color: var(--panel-bg);
+  color: var(--topbar-bg);
+  border: 1px solid var(--topbar-bg);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 13px;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+
+/* Dark mode'da yazı rengi değişsin */
+body.dark .login-btn {
+  background-color: #2b2b2b;
+  color: white;
+  border-color: white;
+}
+
+body.dark .login-btn:hover {
+  background-color: white;
+  color: #2b2b2b;
+}
+
+.login-btn:hover {
+  background-color: var(--topbar-bg);
+  color: var(--panel-bg);
+}
+
+/* Kullanıcı Menüsü */
+.user-menu {
+  display: inline-block;
+  background-color: var(--panel-bg);
+  color: var(--text-color);
+  border: 1px solid var(--topbar-bg);
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.user-menu:hover {
+  background-color: var(--topbar-bg);
+  color: var(--panel-bg);
+}
+
+.dropdown::after {
+  content: " ⌄";
+  font-size: 11px;
+  margin-left: 4px;
+}
+
+.icon {
+  margin-right: 6px;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.dropdown-content {
+  position: absolute;
+  right: 20px;
+  top: 45px;
+  min-width: 140px;
+  background-color: var(--dropdown-bg);
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  animation: fadeIn 0.2s ease-in-out;
+}
+
+.dropdown-content button {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 6px 10px;
+  border-radius: 6px;
+  text-align: left;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.dropdown-content button:hover {
+  background-color: var(--dropdown-hover);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========================== */
+/* GİRİŞ YAPILMIŞSA: Sol menü + içerik */
+/* ========================== */
+.main-layout {
+  display: flex;
+  min-height: calc(100vh - 50px);
+  padding-top: 50px;
+  flex-grow: 1;
+}
+
+.left-bar {
+  width: 200px;
+  background-color: var(--leftbar-bg);
+  color: white;
+  height: calc(100vh - 50px);
+  position: fixed;
+  top: 50px;
+  left: 0;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-bar ul li {
+  padding: 12px 20px;
+}
+
+.left-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+}
+
+.left-bar ul li a:hover {
+  background-color: var(--leftbar-hover);
+  border-radius: 4px;
+}
+
+.content1 {
+  margin-left: 200px;
+  padding: 20px;
+  flex-grow: 1;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding-top: 70px;
+  padding-left: 0 !important;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: calc(100vh - 120px);
+  flex-grow: 1;
+}
+
+.footer {
+  background-color: var(--footer-bg);
+  color: var(--text-color);
+  padding: 10px 0;
+  text-align: center;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  width: 100vw; 
+  margin-left: 0;
+  transition: width 0.3s ease, margin-left 0.3s ease;
+}
+
+body.logged-in .footer {
+  width: calc(100vw - 200px);
+  margin-left: 200px;         
+}
+
+.tema-toggle {
+  width: 60px;
+  height: 30px;
+  background-color: var(--panel-bg);
+  border: 2px solid var(--topbar-bg);
+  border-radius: 30px;
+  position: relative;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0;
+  transition: background-color 0.3s;
+}
+
+.toggle-knob {
+  width: 26px;
+  height: 26px;
+  background-color: var(--topbar-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: white;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.toggle-knob.dark {
+  transform: translateX(30px);
+}
+
+.tema-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: white;
+  transition: color 0.3s;
+}
+
+.tema-toggle-btn:hover {
+  color: #ffc107; 
+}
+.resim-btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  color: white;
+  border: none;
+  transition: 0.3s ease;
+}
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    flex-direction: column;
+  }
+
+  .left-bar {
+    position: fixed;
+    top: 50px;
+    left: -220px;
+    width: 200px;
+    height: calc(100vh - 50px);
+    background-color: var(--leftbar-bg);
+    transition: left 0.3s ease;
+    z-index: 999;
+  }
+
+  .left-bar.active {
+    left: 0;
+  }
+
+  .content1 {
+    margin-left: 0;
+    padding: 20px;
+  }
+
+  .footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  body.logged-in .footer {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .top-bar {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .bar-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+   .bar-content {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+  }
+
+  .auth-buttons,
+  .user-menu {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+  }
+
+  .user-menu {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .dropdown-content {
+    right: 10px;
+    top: 45px;
+  }
+
+ 
+    .menu-toggle {
+    display: inline-block;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .brand {
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+  }
+}

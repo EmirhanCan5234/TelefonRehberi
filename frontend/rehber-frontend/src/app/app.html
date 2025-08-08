@@ -1,0 +1,89 @@
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="bar-content">
+    <a (click)="ikonTiklandi()" class="brand">📱 {{ 'Anaikon' | translate }}</a>
+    <div class="bar-content">
+      <span *ngIf="kullanici" class="menu-toggle" (click)="toggleSidebar()"
+        >☰</span
+      >
+    </div>
+
+    <ng-container *ngIf="!kullanici; else kullaniciMenusu">
+      <div class="auth-buttons">
+        <button class="tema-toggle" (click)="temaDegistir()">
+          <div class="toggle-knob" [class.dark]="tema === 'dark'">
+            <span *ngIf="tema === 'light'">🌞</span>
+            <span *ngIf="tema === 'dark'">🌙</span>
+          </div>
+        </button>
+        <a class="login-btn" routerLink="/giris"
+          >{{ 'GIRIS_YAP' | translate }}</a
+        >
+        <a class="login-btn" routerLink="/kayit"
+          >{{ 'KAYIT_OL' | translate }}</a
+        >
+      </div>
+    </ng-container>
+
+    <ng-template #kullaniciMenusu>
+      <div style="display: flex; align-items: center; gap: 10px">
+        <button class="tema-toggle" (click)="temaDegistir()" type="button">
+          <div class="toggle-knob" [class.dark]="tema === 'dark'">
+            <span *ngIf="tema === 'light'">🌞</span>
+            <span *ngIf="tema === 'dark'">🌙</span>
+          </div>
+        </button>
+
+        <!-- Kullanıcı Menüsü -->
+        <div class="user-menu" (click)="toggleMenu()" style="cursor: pointer">
+          <div class="dropdown">
+            <span class="icon">👤</span> {{ kullanici.kullanici }}
+          </div>
+          <div class="dropdown-content" *ngIf="menuAcik">
+            <button (click)="cikisYap()">{{ 'CIKIS' | translate }}</button>
+          </div>
+        </div>
+      </div>
+    </ng-template>
+  </div>
+</div>
+
+<!-- GİRİŞ YAPILDIYSA LAYOUT -->
+<ng-container *ngIf="kullanici; else sadeceHome">
+  <div class="main-layout">
+    <div class="left-bar">
+      <ul>
+        <li>
+          <a routerLink="/rehber-panel">🏠 {{ 'Anasayfa' | translate }}</a>
+        </li>
+        <li><a routerLink="/rehber">📖 {{ 'Rehberli' | translate }}</a></li>
+        <li>
+          <a routerLink="/rehber-ekle">➕ {{ 'KISI_EKLE' | translate }}</a>
+        </li>
+        <li><a routerLink="/profil">👤 {{ 'PROFIL' | translate }}</a></li>
+      </ul>
+    </div>
+
+    <div class="content1">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #sadeceHome>
+  <div class="content" style="padding-left: 0 !important">
+    <router-outlet></router-outlet>
+  </div>
+</ng-template>
+
+<footer class="footer">
+  <div class="language-switcher">
+    <button (click)="dilDegistir('tr')">
+      <img src="assets/flags/tr.png" alt="Türkçe" width="24" height="16" />
+    </button>
+    <button (click)="dilDegistir('en')">
+      <img src="assets/flags/gb.png" alt="English" width="24" height="16" />
+    </button>
+  </div>
+  <small>&copy; 2025 - {{ 'footer' | translate }}</small>
+</footer>

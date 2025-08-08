@@ -1,0 +1,6 @@
+@TelefonRehberi_HostAddress = http://localhost:5165
+
+GET {{TelefonRehberi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

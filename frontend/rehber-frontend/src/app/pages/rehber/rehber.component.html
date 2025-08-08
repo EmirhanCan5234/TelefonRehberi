@@ -1,0 +1,140 @@
+<div class="rehber-wrapper">
+<h3>{{ "Rehber" | translate }}</h3>
+<label> {{ "RehberAltBaslik" | translate }}</label>
+<div style="margin-top: 10px; margin-bottom: 20px">
+  <input
+    type="text"
+    [(ngModel)]="aramaMetni"
+    [placeholder]="'RehberAltBaslik' | translate"
+    (input)="filtrele()"
+    style="
+      width: 300px;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    "
+  />
+</div>
+
+<div class="pagination-controls">
+  <button class="sayfa-btn" (click)="oncekiSayfa()" [disabled]="currentPage === 1">← {{ 'Önceki' | translate }}</button>
+  <span>Sayfa {{ currentPage }} / {{ toplamSayfa }}</span>
+  <button class="sayfa-btn"  (click)="sonrakiSayfa()" [disabled]="currentPage === toplamSayfa">{{ 'Sonraki' | translate }} →</button>
+</div>
+<div class="excelbtn-container">
+  <button class="excelbtn" (click)="excelIndir()">
+    📁 {{ 'EXCEL_AKTAR' | translate }}
+  </button>
+</div>
+
+<ag-grid-angular
+  class="ag-theme-alpine custom-grid"
+  [rowData]="sayfaVerisi"
+  [columnDefs]="columnDefs"
+  style="width: 100%; max-width: 950px; height: 500px"
+>
+</ag-grid-angular>
+
+
+<!-- DETAY ve GÜNCELLE Modal -->
+<div class="modal" *ngIf="detayGoster">
+  <div class="modal-content">
+    <h3 *ngIf="!guncelleModu">{{ "KisiDetay" | translate }}</h3>
+    <h3 *ngIf="guncelleModu">{{ "KisiGuncel" | translate }}</h3>
+
+    <ng-container *ngIf="!guncelleModu">
+      <p>
+        <strong>{{ "Ad" | translate }}:</strong> {{ secilenKisi.ad }}
+      </p>
+      <p>
+        <strong>{{ "Soyad" | translate }}:</strong> {{ secilenKisi.soyad }}
+      </p>
+      <p>
+        <strong>{{ "Telefon" | translate }}:</strong> {{ secilenKisi.telefon }}
+      </p>
+      <p>
+        <strong>{{ "EPosta" | translate }}:</strong> {{ secilenKisi.email }}
+      </p>
+      <div class="btn-group">
+        <button class="btn-blue" (click)="guncelleModu = true">
+          {{ "KISI_GUNCELLE" | translate }}
+        </button>
+        <button class="btn-red" (click)="detayGoster = false">
+          {{ "Kapat" | translate }}
+        </button>
+      </div>
+    </ng-container>
+
+    <ng-container *ngIf="guncelleModu">
+      <div
+        *ngIf="mesaj"
+        [ngClass]="{
+          'alert-success': mesajTipi === 'success',
+          'alert-error': mesajTipi === 'error'
+        }"
+        class="alert-box"
+      >
+        {{ mesaj }}
+      </div>
+      <label>{{ "Ad" | translate }}</label>
+      <input [(ngModel)]="secilenKisi.ad" />
+
+      <label>{{ "Soyad" | translate }}</label>
+      <input [(ngModel)]="secilenKisi.soyad" />
+
+      <label>{{ "Telefon" | translate }}</label>
+      <input type="text" mask="(000) 000-0000" prefix="0" placeholder="0(5__) ___-____" [(ngModel)]="secilenKisi.telefon" name="telefon" required />
+
+      <label>{{ "EPosta" | translate }}</label>
+      <input [(ngModel)]="secilenKisi.email" />
+
+      <div class="btn-group">
+        <button class="btn-blue" (click)="guncelleKaydet()">
+          {{ "KISI_GUNCELLE" | translate }}
+        </button>
+        <button class="btn-red" (click)="guncelleModu = false">
+          {{ "Vazgec" | translate }}
+        </button>
+      </div>
+    </ng-container>
+  </div>
+</div>
+
+<!-- SİLME Onay Modal -->
+<div class="modal" *ngIf="silmeGoster">
+  <div class="modal-content">
+    <h3>{{ "kisisil" | translate }}</h3>
+    <div
+      *ngIf="mesaj"
+      [ngClass]="{
+        'alert-success': mesajTipi === 'success',
+        'alert-error': mesajTipi === 'error'
+      }"
+      class="alert-box"
+    >
+      {{ mesaj }}
+    </div>
+    <p>
+      <strong>{{ "Ad" | translate }}:</strong> {{ secilenKisi.ad }}
+    </p>
+    <p>
+      <strong>{{ "Soyad" | translate }}:</strong> {{ secilenKisi.soyad }}
+    </p>
+    <p>
+      <strong>{{ "Telefon" | translate }}:</strong> {{ secilenKisi.telefon }}
+    </p>
+    <p>
+      <strong>{{ "EPosta" | translate }}:</strong> {{ secilenKisi.email }}
+    </p>
+    <p>{{ "silMesaj" | translate }}</p>
+    <div class="btn-group">
+      <button class="btn-danger" (click)="kisiSil()">
+        {{ "evetsil" | translate }}
+      </button>
+      <button class="btn-red" (click)="silmeGoster = false">
+        {{ "Vazgec" | translate }}
+      </button>
+    </div>
+  </div>
+</div>
+</div>
